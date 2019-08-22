@@ -18,7 +18,7 @@ Le'ts generated 200000 rows artificial data with 2 classes and 20 features using
 
 
 
-![1563462334382](../temp/assets/1563462334382.png)
+![1563462334382](./temp/assets/1563462334382.png)
 
 
 
@@ -26,11 +26,11 @@ Le'ts generated 200000 rows artificial data with 2 classes and 20 features using
 
 Let's divide the data set one to Train and Validation set
 
-![1563462444557](../temp/assets/1563462444557.png)
+![1563462444557](./temp/assets/1563462444557.png)
 
 
 
-![1563462926684](../temp/assets/1563462926684.png)
+![1563462926684](./temp/assets/1563462926684.png)
 
 
 
@@ -90,7 +90,7 @@ evaluate(rf_random.best_estimator_, x_test, y_test)
 
 ```
 
-![1563460693425](../temp/assets/1563460693425.png)
+![1563460693425](./temp/assets/1563460693425.png)
 
 ###### **f1-score is 0.944**
 
@@ -104,7 +104,7 @@ But this time, when cross validate, added 2 features(the number of classes) whic
 
 
 
-![1563462945936](../temp/assets/1563462945936.png)
+![1563462945936](./temp/assets/1563462945936.png)
 
 
 
@@ -112,7 +112,7 @@ After all cross validation we can have **all the dataset with added 2 features.*
 
 
 
-![1563463139689](../temp/assets/1563463139689.png)
+![1563463139689](./temp/assets/1563463139689.png)
 
 
 
@@ -192,7 +192,7 @@ rf_GS = rf_train(x_train_meta,y_train_meta)
 
 ```
 
-And again fit whole dataset using the best paramter
+And again fit whole dataset using the best parameter
 
 ```python
 rf_final = RandomForestClassifier(random_state=0, n_estimators=rf_GS.best_params_['n_estimators'], max_depth=rf_GS.best_params_['max_depth'])
@@ -213,7 +213,7 @@ evaluate(rf_final,x_test_meta,y_test)
 
 
 
-![1563466016331](../temp/assets/1563466016331.png)
+![1563466016331](./temp/assets/1563466016331.png)
 
 
 
